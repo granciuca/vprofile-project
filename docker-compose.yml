@@ -11,8 +11,6 @@ services:
       - vprodbdata:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=vprodbpass
-  redis:
-    image: "redis:alpine"
 
   vprocache01:
     image: memcached
